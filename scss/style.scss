@@ -141,7 +141,6 @@ a {
             
             &-input {
                 flex: 1;
-                
 
                 input {
                     @include font-montserrat();
@@ -164,15 +163,55 @@ a {
                 .btn-start {}
             }
 
-            @media (max-width: $screen-sm-max) {
-                flex-direction: column;
-
-            }
-            @media (min-width: $screen-md) {
-                &-input {
-                    margin-right: 40px;
-                }
+        }
+    }
+    @media (max-width: $screen-sm-max) {
+        .section-inner{}
+        &-logo {
             
+        }
+        &-content {
+            
+        }
+        &-wrapper {
+    
+            &__title {
+                font-size: 36px;
+                margin-bottom: 15px;
+                line-height: 40px;
+            }
+            &__subtitle {
+                font-size: 16px;
+                line-height: 20px;
+                width: 85%;
+                margin: 0 auto 20px;
+            }
+            &__form {
+                flex-direction: column;
+                display: flex;
+
+                &-input {
+                    margin-bottom: 20px;
+                    input {
+                        
+                        }
+                    }
+                }
+                &-button {
+                    .btn-start {
+                        margin-left: 10%;
+                    }
+                }
+    
+            }
+        }
+
+    @media (min-width: $screen-md) {
+        &-wrapper {
+            &__form {
+                &-input {
+                    margin-right: 30px;
+                }
             }
         }
     }
@@ -188,6 +227,10 @@ a {
     @media (min-width: $screen-md) {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+    @media (max-width: $screen-sm-max) {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 

@@ -411,17 +411,36 @@ a {
           .section-header-wrapper__form-input input::placeholder {
             color: #ffffff;
             opacity: 1; }
-      @media (max-width: 767px) {
-        .section-header-wrapper__form {
-          flex-direction: column; } }
-      @media (min-width: 768px) {
-        .section-header-wrapper__form-input {
-          margin-right: 40px; } }
+  @media (max-width: 767px) {
+    .section-header-wrapper__title {
+      font-size: 36px;
+      margin-bottom: 15px;
+      line-height: 40px; }
+    .section-header-wrapper__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      width: 85%;
+      margin: 0 auto 20px; }
+    .section-header-wrapper__form {
+      flex-direction: column;
+      display: flex; }
+      .section-header-wrapper__form-input {
+        margin-bottom: 20px; }
+    .section-header-wrapper-button .btn-start {
+      margin-left: 10%; } }
+  @media (min-width: 768px) {
+    .section-header-wrapper__form-input {
+      margin-right: 30px; } }
 
 @media (min-width: 768px) {
   .section-promo {
     padding-top: 120px;
     padding-bottom: 120px; } }
+
+@media (max-width: 767px) {
+  .section-promo {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
 
 .section-promo-1 {
   display: flex; }
